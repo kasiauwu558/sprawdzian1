@@ -1,8 +1,13 @@
+@font-face {
+    font-family: 'Poppins-Regular';
+    src: url('../fonts/Poppins-Regular.ttf') format('truetype');
+}
+
 body {
-    font-family: "Roboto";
-    font-weight: 500;
-    background-color: white;
-    color: black;
+    background-image: url('./images/bg.jpg');
+    font-family: 'Poppins-Regular';
+    background-color: #303030;
+    color: #ddd;
     font-size: 24px;
     margin: 0 !important;
 }
@@ -12,39 +17,28 @@ body {
 }
 
 .logo img {
-	width: 50px;
-	height: 50px;
+	width: 55px;
+	height: 55px;
 }
 
-.logo {
-    background-color: #00c2d6;
+
+li.logo {
 	height: 100%;
-	font-size: 40px;
+	font-size: 28px;
+	transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out;
     display: flex;
 	align-items: center;
-    padding: 10px;
 }
 
-.logo > a {
+li.logo > a {
 	transition: color 0.2s ease-in-out;
     display: flex;
     align-items: center;
 }
 
-.li > a.menu {
-    width: 60px;
-}
-
-.menu img {
-    width: 35px;
-    height: 35px;
-    display: flex;
-    vertical-align: middle;
-}
-
-li.menu a {
-    display: flex;
-    align-items: center;
+li.logo:hover
+{
+    transform: scale(0.95);
 }
 
 .nav ol {
@@ -61,13 +55,13 @@ li.menu a {
 
 .nav
 {
-    justify-content: center;
+    border-radius: 25px;
 	display: flex;
     align-items: center;
 	box-sizing: border-box;
-	background-color: #679da8;
+	background-color: rgba(100, 100, 100, 0.25);
 	width: 100vw;
-	padding: 15px 0;
+	padding: 10px 0;
 	padding-left: 40px;
 }
 
@@ -103,8 +97,8 @@ li
 
 li.menu
 {
-    margin-right: 20px;
-    margin-left: 20px;
+    margin-right: 40px;
+    margin-left: 40px;
 	display: flex;
 	text-align: left;
 	align-items: center;
@@ -125,7 +119,7 @@ li.menu:hover
     transform: scale(0.95);
 }
 
-.menu > li:hover > a
+li:hover > a
 {
 	color: #A0A0A0;
 }
@@ -137,14 +131,13 @@ table {
 }
 
 .content {
-    margin-left: 20px;
-    margin-right: 20px;
-    background-color: #679da8;
+    width: 80%;
 	margin: 10px 0;
-    overflow: auto;
+    overflow: hidden;
     text-align: justify;
-    padding-top: 30px;
-    padding-left: 55px;
+    padding:; 25px;
+    background-color: white;
+    border-radius: 10px;
 }
 
 .content::after {
@@ -153,7 +146,7 @@ table {
     clear: both;
 }
 
-.menu > a:hover
+a:hover
 {
 	color: #adadad;
 }
