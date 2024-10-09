@@ -12,6 +12,9 @@ body {
     color: black;
     font-size: 24px;
     margin: 0 !important;
+    min-height: 100vh;
+    position: relative;
+    padding-bottom: 80px;
 }
 
 .logo {
@@ -32,9 +35,6 @@ body {
     padding-bottom: 10px;
     width: 51vw;
     margin: auto;
-    border-radius: 25px;
-    border-bottom-left-radius: 0px;
-    border-bottom-right-radius: 0px;
 }
 
 .logo a {
@@ -137,10 +137,10 @@ table {
     background-color: white;
     width: 80%;
 	margin: auto;
-    overflow: hidden;
     text-align: justify;
     padding: 15px;
     border-radius: 10px;
+    margin-bottom: 20px;
 }
 
 .content a {
@@ -159,7 +159,7 @@ table {
     text-align: center;
     width: 40vw;
     background-color: #71a5aa;
-    position: absolute;
+    position: fixed;
     bottom: 0;
     left: 30%;
     color: white;
@@ -193,4 +193,127 @@ table {
 
 .promo2 {
     display: flex;
+}
+
+.nav ol li a {
+    color: white;
+    text-align: center;
+}
+
+.nav ol li ul {
+    display: block;
+    position: absolute;
+    top: 100%;
+    background-color: #679da8;
+    overflow: hidden;
+    max-height: 0;
+    padding: 0;
+    transition: max-height 0.2s ease-in-out;
+}
+
+.nav ol li:hover ul {
+    padding-bottom: 15px;
+}
+
+.nav ol li ul li{
+	height: 40px;
+    padding: 5px;
+	transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out;
+}
+
+.nav ol li ul li a{
+	transition: color 0.2s ease-in-out;
+    display: flex;
+    align-items: center
+}
+
+.nav ol li:hover ul {
+    max-height: 1000px;
+}
+
+.nav ol li ul li:hover {
+    transform: scale(0.95);
+}
+
+.nav ol li ul li:hover > a {
+	color: #A0A0A0;
+}
+
+.nav ol li ul li img {
+    width: 35px;
+    height: 35px;
+    padding-right: 10px;
+    vertical-align: middle;
+}
+
+.discount {
+    color: red;
+    font-size: 0.8em;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.menu ul li a {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.product-container {
+    margin-left: 25px;
+    row-gap: 1em;
+    column-gap: 1em;
+    min-height: 80vh;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.products {
+    width: 48%;
+    height: 50%;
+}
+
+#product1 {
+    border: 2px solid #666;
+    background-color: #cccccc;
+}
+
+#product2 {
+    border: 2px solid #666;
+    background-color: #bbbbbb;
+}
+
+#product3 {
+    border: 2px solid #666;
+    background-color: #aaaaaa;
+}
+
+#product4 {
+    border: 2px solid #666;
+    background-color: #999999;
+}
+
+.product-content {
+    display: flex;
+    padding: 15px;
+    gap: 20px;
+}
+
+.product-image {
+    flex-shrink: 0;
+}
+
+.product-description {
+    text-align: left;
+    line-height: 1.5;
+    font-size: 20px;
+}
+
+.product-details {
+    flex-grow: 1;
+}
+
+.product-name {
+    font-weight: bold;
+    font-size: 30px;
 }
