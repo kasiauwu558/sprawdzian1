@@ -1,5 +1,6 @@
 body {
-    font-family: sans-serif;
+    font-family: "Roboto";
+    font-weight: 500;
     background-color: white;
     color: black;
     font-size: 24px;
@@ -16,7 +17,7 @@ body {
 }
 
 .logo {
-    background-color: #009fb0;
+    background-color: #00c2d6;
 	height: 100%;
 	font-size: 40px;
     display: flex;
@@ -64,7 +65,7 @@ li.menu a {
 	display: flex;
     align-items: center;
 	box-sizing: border-box;
-	background-color: rgba(100, 100, 100, 0.8);
+	background-color: #679da8;
 	width: 100vw;
 	padding: 15px 0;
 	padding-left: 40px;
@@ -102,8 +103,8 @@ li
 
 li.menu
 {
-    margin-right: 40px;
-    margin-left: 40px;
+    margin-right: 20px;
+    margin-left: 20px;
 	display: flex;
 	text-align: left;
 	align-items: center;
@@ -124,7 +125,7 @@ li.menu:hover
     transform: scale(0.95);
 }
 
-li:hover > a
+.menu > li:hover > a
 {
 	color: #A0A0A0;
 }
@@ -136,6 +137,9 @@ table {
 }
 
 .content {
+    margin-left: 20px;
+    margin-right: 20px;
+    background-color: #679da8;
 	margin: 10px 0;
     overflow: auto;
     text-align: justify;
@@ -149,7 +153,7 @@ table {
     clear: both;
 }
 
-a:hover
+.menu > a:hover
 {
 	color: #adadad;
 }
