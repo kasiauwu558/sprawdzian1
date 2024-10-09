@@ -4,9 +4,11 @@
 }
 
 body {
-    background-image: url('./images/bg.jpg');
-    font-family: 'Poppins-Regular';
-    background-color: #303030;
+    width: 100vw;
+    font-family: 'Roboto';
+    font-weight: 500;
+    background-color: white;
+    color: black;
     color: #ddd;
     font-size: 24px;
     margin: 0 !important;
@@ -17,31 +19,45 @@ body {
 }
 
 .logo img {
-	width: 55px;
-	height: 55px;
+	width: 50px;
+	height: 50px;
 }
 
 
-li.logo {
+.logo {
+    background-color: #00c2d6;
 	height: 100%;
-	font-size: 28px;
+	font-size: 40px;
 	transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out;
     display: flex;
 	align-items: center;
+	padding: 10px;
 }
 
-li.logo > a {
+.logo > a {
 	transition: color 0.2s ease-in-out;
     display: flex;
     align-items: center;
 }
 
-li.logo:hover
-{
-    transform: scale(0.95);
+.li > a.menu {
+    width: 60px;
 }
 
+.menu img {
+    width: 35px;
+    height: 35px;
+    display: flex;
+    vertical-align: middle;
+}
+
+li.menu a {
+    display: flex;
+    align-items: center;
+
 .nav ol {
+    justify-content: center;
+    border-radius: 25px;
     display: flex;
     align-items: center;
     list-style: none;
@@ -59,9 +75,9 @@ li.logo:hover
 	display: flex;
     align-items: center;
 	box-sizing: border-box;
-	background-color: rgba(100, 100, 100, 0.25);
+	background-color: #679da8;
 	width: 100vw;
-	padding: 10px 0;
+	padding: 15px 0;
 	padding-left: 40px;
 }
 
@@ -97,8 +113,8 @@ li
 
 li.menu
 {
-    margin-right: 40px;
-    margin-left: 40px;
+    margin-right: 20px;
+    margin-left: 20px;
 	display: flex;
 	text-align: left;
 	align-items: center;
@@ -119,7 +135,7 @@ li.menu:hover
     transform: scale(0.95);
 }
 
-li:hover > a
+.menu > li:hover > a
 {
 	color: #A0A0A0;
 }
@@ -131,6 +147,9 @@ table {
 }
 
 .content {
+    margin-left: 20px;
+    margin-right: 20px;
+    background-color: #679da8;
     width: 80%;
 	margin: 10px 0;
     overflow: hidden;
@@ -146,7 +165,7 @@ table {
     clear: both;
 }
 
-a:hover
+.menu > a:hover
 {
 	color: #adadad;
 }
