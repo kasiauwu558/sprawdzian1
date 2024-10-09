@@ -7,9 +7,8 @@ body {
     width: 100vw;
     font-family: 'Roboto';
     font-weight: 500;
-    background-color: white;
+    background-color: #ddd;
     color: black;
-    color: #ddd;
     font-size: 24px;
     margin: 0 !important;
 }
@@ -149,9 +148,9 @@ table {
 .content {
     margin-left: 20px;
     margin-right: 20px;
-    background-color: #679da8;
+    background-color: white;
     width: 80%;
-	margin: 10px 0;
+	margin: auto;
     overflow: hidden;
     text-align: justify;
     padding:; 25px;
@@ -169,3 +168,4 @@ table {
 {
 	color: #adadad;
 }
+	
