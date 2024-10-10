@@ -5,7 +5,7 @@
 
 body {
     background-image: url('../images/bg.webp');
-    width: 100vw;
+    width: auto;
     font-family: 'Roboto';
     font-weight: 500;
     background-color: #ddd;
@@ -275,22 +275,22 @@ table {
 
 #product1 {
     border: 2px solid #666;
-    background-color: #cccccc;
+    background-color: #ababab;
 }
 
 #product2 {
     border: 2px solid #666;
-    background-color: #bbbbbb;
+    background-color: #ababab;
 }
 
 #product3 {
     border: 2px solid #666;
-    background-color: #aaaaaa;
+    background-color: #ababab;
 }
 
 #product4 {
     border: 2px solid #666;
-    background-color: #999999;
+    background-color: #ababab;
 }
 
 .product-content {
